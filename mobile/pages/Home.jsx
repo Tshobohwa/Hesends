@@ -42,6 +42,22 @@ const Home = () => {
         <TransactionButton name="Send" />
         <TransactionButton name="Withdraw" />
       </View>
+      <View
+        style={{
+          marginTop: 20,
+          flexDirection: "row",
+          justifyContent: "space-between",
+        }}
+      >
+        <Text style={{ fontSize: 20, fontWeight: "semibold" }}>
+          Transactions
+        </Text>
+        <TouchableOpacity>
+          <Text style={{ fontSize: 18, color: COLORS["green-light"] }}>
+            see all
+          </Text>
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 };
