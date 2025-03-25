@@ -5,7 +5,8 @@ import COLORS from "../../utils/colors";
 const AccountCard = () => {
   return (
     <TouchableOpacity style={styles.container}>
-      <View>
+      <View></View>
+      <View style={{ width: "100%" }}>
         <Text style={[styles.text, { color: COLORS["green"] }]}>
           Account card
         </Text>
@@ -22,13 +23,13 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 15,
     borderWidth: 1,
-    borderColor: COLORS["green-light"],
+    borderColor: COLORS["green-light-50"],
     width: 160,
     height: 120,
     justifyContent: "space-between",
   },
   text: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "600",
     textAlign: "center",
   },
