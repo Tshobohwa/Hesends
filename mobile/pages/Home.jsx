@@ -14,6 +14,8 @@ import TransactionButton from "../components/buttons/TransactionButton";
 import TransactionItem from "../components/buttons/TransactionItem";
 import AccountCard from "../components/buttons/AccountCard";
 import hesendsIcon from "../images/hesends.png";
+import hederaBlack from "../images/hedera-black.png";
+import hederaGreen from "../images/hedera-green.png";
 
 const Home = () => {
   return (
@@ -21,10 +23,32 @@ const Home = () => {
       style={{ flex: 1, paddingVertical: 20, backgroundColor: COLORS.white }}
     >
       <ScrollView style={styles.container}>
-        <Image
-          source={hesendsIcon}
-          style={{ width: 40, height: 40, marginBottom: 30 }}
-        />
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "flex-end",
+            gap: -20,
+            marginBottom: 40,
+          }}
+        >
+          <Image
+            source={hederaGreen}
+            style={{
+              height: 32,
+              objectFit: "contain",
+            }}
+          />
+          <Text
+            style={{
+              fontSize: 30,
+              marginBottom: -5,
+              color: COLORS["green-light"],
+            }}
+          >
+            esends
+          </Text>
+        </View>
+
         <TouchableOpacity
           style={{ flexDirection: "row", alignItems: "center", gap: 10 }}
         >
