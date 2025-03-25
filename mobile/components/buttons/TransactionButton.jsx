@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     borderRadius: 20,
     width: (screenDimensions.screenWidth - 30) / 3,
-    borderColor: COLORS["black-light"],
     borderWidth: 1,
+    borderColor: COLORS["green-light"],
   },
   text: {
     fontSize: 18,
