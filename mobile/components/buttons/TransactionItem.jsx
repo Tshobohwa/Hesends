@@ -21,7 +21,8 @@ const TransactionItem = () => {
         >
           <Text style={{ fontSize: 18, fontWeight: "600" }}>JD</Text>
         </View>
-        <Text style={{ fontSize: 18, fontWeight: "semibold" }}>John Doe</Text>
+        <Text style={{ fontSize: 18, fontWeight: "600" }}>John Doe</Text>
+        <Text style={{ fontSize: 18, fontWeight: "600" }}>John Doe</Text>
       </View>
       <Text style={{ fontSize: 18, fontWeight: "semibold" }}>
         -354 <Text style={{ fontSize: 12, fontWeight: "600" }}>KES</Text>
