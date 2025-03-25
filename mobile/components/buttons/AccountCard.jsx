@@ -6,11 +6,15 @@ const AccountCard = () => {
   return (
     <TouchableOpacity style={styles.container}>
       <View></View>
-      <View style={{ width: "100%" }}>
-        <Text style={[styles.text, { color: COLORS["green"] }]}>
+      <View style={{ width: 140, alignItems: "flex-end" }}>
+        <Text
+          style={[styles.text, { color: COLORS["green"], fontWeight: "600" }]}
+        >
           Account card
         </Text>
-        <Text style={styles.text}>Account card</Text>
+        <Text style={[styles.text, { color: COLORS["black-light"] }]}>
+          10 000 UGX
+        </Text>
       </View>
     </TouchableOpacity>
   );
@@ -27,10 +31,10 @@ const styles = StyleSheet.create({
     width: 160,
     height: 120,
     justifyContent: "space-between",
+    marginRight: 10,
   },
   text: {
     fontSize: 20,
-    fontWeight: "600",
     textAlign: "center",
   },
 });

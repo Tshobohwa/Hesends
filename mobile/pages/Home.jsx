@@ -51,8 +51,12 @@ const Home = () => {
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
-          style={{ width: "100%", marginTop: 20 }}
+          style={{ width: "100%", marginTop: 20, gap: 10 }}
         >
+          <AccountCard />
+          <AccountCard />
+          <AccountCard />
+          <AccountCard />
           <AccountCard />
         </ScrollView>
         <View
