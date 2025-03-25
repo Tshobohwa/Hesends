@@ -5,6 +5,7 @@ import {
   ScrollView,
   TouchableOpacity,
   SafeAreaView,
+  Image,
 } from "react-native";
 import React from "react";
 import COLORS from "../utils/colors";
@@ -12,6 +13,7 @@ import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import TransactionButton from "../components/buttons/TransactionButton";
 import TransactionItem from "../components/buttons/TransactionItem";
 import AccountCard from "../components/buttons/AccountCard";
+import hesendsIcon from "../images/hesends.png";
 
 const Home = () => {
   return (
@@ -19,6 +21,10 @@ const Home = () => {
       style={{ flex: 1, paddingVertical: 20, backgroundColor: COLORS.white }}
     >
       <ScrollView style={styles.container}>
+        <Image
+          source={hesendsIcon}
+          style={{ width: 40, height: 40, marginBottom: 30 }}
+        />
         <TouchableOpacity
           style={{ flexDirection: "row", alignItems: "center", gap: 10 }}
         >
@@ -43,11 +49,11 @@ const Home = () => {
         >
           14 500<Text style={{ fontSize: 24 }}> KES</Text>
         </Text>
-        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+        {/* <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <TransactionButton name="Top up" />
           <TransactionButton name="Send" />
           <TransactionButton name="Withdraw" />
-        </View>
+        </View> */}
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
