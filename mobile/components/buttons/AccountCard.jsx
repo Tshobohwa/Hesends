@@ -6,11 +6,11 @@ const AccountCard = () => {
   return (
     <TouchableOpacity style={styles.container}>
       <View></View>
-      <View style={{ width: 140, alignItems: "flex-end" }}>
+      <View style={{ width: 160, alignItems: "flex-end" }}>
         <Text
           style={[styles.text, { color: COLORS["green"], fontWeight: "600" }]}
         >
-          Account card
+          Ugandan Shilling
         </Text>
         <Text style={[styles.text, { color: COLORS["black-light"] }]}>
           10 000 UGX
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     borderWidth: 1,
     borderColor: COLORS["green-light-50"],
-    width: 160,
+    width: 180,
     height: 120,
     justifyContent: "space-between",
     marginRight: 10,
