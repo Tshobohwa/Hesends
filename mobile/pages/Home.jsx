@@ -13,15 +13,13 @@ import COLORS from "../utils/colors";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import TransactionItem from "../components/buttons/TransactionItem";
 import AccountCard from "../components/buttons/AccountCard";
-import hesendsIcon from "../images/hesends.png";
-import hederaBlack from "../images/hedera-black.png";
+// import hesendsIcon from "../images/hesends.png";
+// import hederaBlack from "../images/hedera-black.png";
 import hederaGreen from "../images/hedera-green.png";
 
 const Home = () => {
   return (
-    <SafeAreaView
-      style={{ flex: 1, paddingVertical: 20, backgroundColor: COLORS.white }}
-    >
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
       <ScrollView style={styles.container}>
         <View
           style={{
@@ -41,7 +39,7 @@ const Home = () => {
           <Text
             style={{
               fontSize: 30,
-              marginBottom: -5,
+              marginBottom: -18,
               color: COLORS["green-light"],
             }}
           >
@@ -127,5 +125,6 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     padding: 10,
+    paddingTop: 40,
   },
 });
