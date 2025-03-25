@@ -72,9 +72,7 @@ const Home = () => {
             justifyContent: "space-between",
           }}
         >
-          <Text style={{ fontSize: 20, fontWeight: "semibold" }}>
-            Transactions
-          </Text>
+          <Text style={{ fontSize: 20, fontWeight: "600" }}>Transactions</Text>
           <TouchableOpacity>
             <Text style={{ fontSize: 18, color: COLORS["green-light"] }}>
               see all

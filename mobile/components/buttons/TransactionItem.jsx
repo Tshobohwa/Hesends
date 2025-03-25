@@ -1,35 +1,36 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import COLORS from "../../utils/colors";
 
 const TransactionItem = () => {
   return (
-    <View
+    <TouchableOpacity
       style={{
         flexDirection: "row",
         justifyContent: "space-between",
         padding: 10,
+        margin: 4,
       }}
     >
       <View style={{ flexDirection: "row", alignItems: "flex-start", gap: 10 }}>
         <View
           style={{
-            padding: 8,
+            padding: 10,
             backgroundColor: COLORS["white-light"],
             borderRadius: 5,
           }}
         >
-          <Text style={{ fontSize: 18, fontWeight: "600" }}>JD</Text>
+          <Text style={{ fontSize: 16, fontWeight: "600" }}>JD</Text>
         </View>
         <View>
           <Text style={{ fontSize: 18, fontWeight: "600" }}>John Doe</Text>
           <Text style={{ fontSize: 14 }}>John Doe</Text>
         </View>
       </View>
-      <Text style={{ fontSize: 18, fontWeight: "semibold" }}>
-        -354 <Text style={{ fontSize: 12, fontWeight: "600" }}>KES</Text>
+      <Text style={{ fontSize: 18, fontWeight: "600" }}>
+        -354 <Text style={{ fontSize: 12, fontWeight: "700" }}>KES</Text>
       </Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
