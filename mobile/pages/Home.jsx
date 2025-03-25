@@ -13,7 +13,6 @@ import TransactionButton from "../components/buttons/TransactionButton";
 const Home = () => {
   return (
     <ScrollView style={styles.container}>
-      <Text>Home</Text>
       <TouchableOpacity
         style={{ flexDirection: "row", alignItems: "center", gap: 10 }}
       >
@@ -38,7 +37,7 @@ const Home = () => {
       >
         14 500<Text style={{ fontSize: 24 }}> KES</Text>
       </Text>
-      <View>
+      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
         <TransactionButton name="Top up" />
         <TransactionButton name="Send" />
         <TransactionButton name="Withdraw" />

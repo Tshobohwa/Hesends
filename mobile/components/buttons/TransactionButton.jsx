@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
+import screenDimensions from "../../utils/screenDimensions";
 
 const TransactionButton = ({ name, onPress }) => {
   return (
@@ -18,6 +19,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 20,
+    width: (screenDimensions.screenWidth - 30) / 3,
   },
   text: {
     fontSize: 18,
