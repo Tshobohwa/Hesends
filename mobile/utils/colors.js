@@ -5,6 +5,7 @@ COLORS = {
   "green-light": "#5DD62C",
   green: "#337418",
   "green-light-50": "#5DD62C50",
+  "white-light": "#D9D9D9",
 };
 
 export default COLORS;
