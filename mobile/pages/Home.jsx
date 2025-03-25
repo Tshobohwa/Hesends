@@ -6,11 +6,11 @@ import {
   TouchableOpacity,
   SafeAreaView,
   Image,
+  ActivityIndicator,
 } from "react-native";
 import React from "react";
 import COLORS from "../utils/colors";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import TransactionButton from "../components/buttons/TransactionButton";
 import TransactionItem from "../components/buttons/TransactionItem";
 import AccountCard from "../components/buttons/AccountCard";
 import hesendsIcon from "../images/hesends.png";
@@ -48,7 +48,7 @@ const Home = () => {
             esends
           </Text>
         </View>
-
+        n
         <TouchableOpacity
           style={{ flexDirection: "row", alignItems: "center", gap: 10 }}
         >
@@ -67,7 +67,6 @@ const Home = () => {
             color={COLORS["green-light"]}
           />
         </TouchableOpacity>
-
         <Text
           style={{ color: COLORS.black, fontSize: 48, fontWeight: "semibold" }}
         >
