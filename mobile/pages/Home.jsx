@@ -1,12 +1,42 @@
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
+import COLORS from "../utils/colors";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
 const Home = () => {
   return (
     <ScrollView style={styles.container}>
       <Text>Home</Text>
-      <Text>KES Account</Text>
-      <Text style={{}}>14 500 KES</Text>
+      <TouchableOpacity
+        style={{ flexDirection: "row", alignItems: "center", gap: 10 }}
+      >
+        <Text
+          style={{
+            fontWeight: "semibold",
+            color: COLORS["green-light"],
+            fontSize: 24,
+          }}
+        >
+          KES Account
+        </Text>
+        <MaterialIcons
+          name="keyboard-arrow-down"
+          size={24}
+          color={COLORS["green-light"]}
+        />
+      </TouchableOpacity>
+
+      <Text
+        style={{ color: COLORS.black, fontSize: 48, fontWeight: "semibold" }}
+      >
+        14 500<Text style={{ fontSize: 24 }}> KES</Text>
+      </Text>
     </ScrollView>
   );
 };
