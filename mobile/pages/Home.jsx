@@ -10,6 +10,7 @@ import React from "react";
 import COLORS from "../utils/colors";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import TransactionButton from "../components/buttons/TransactionButton";
+import TransactionItem from "../components/buttons/TransactionItem";
 
 const Home = () => {
   return (
@@ -62,6 +63,15 @@ const Home = () => {
             </Text>
           </TouchableOpacity>
         </View>
+        <TransactionItem />
+        <TransactionItem />
+        <TransactionItem />
+        <TransactionItem />
+        <TransactionItem />
+        <TransactionItem />
+        <TransactionItem />
+        <TransactionItem />
+        <TransactionItem />
       </ScrollView>
     </SafeAreaView>
   );
