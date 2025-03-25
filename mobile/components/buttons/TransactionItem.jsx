@@ -11,17 +11,20 @@ const TransactionItem = () => {
         padding: 10,
       }}
     >
-      <View
-        style={{
-          padding: 8,
-          backgroundColor: COLORS["white-light"],
-          borderRadius: 5,
-        }}
-      >
-        <Text style={{ fontSize: 18, fontWeight: "600" }}>JD</Text>
+      <View style={{ flexDirection: "row", alignItems: "flex-start" }}>
+        <View
+          style={{
+            padding: 8,
+            backgroundColor: COLORS["white-light"],
+            borderRadius: 5,
+          }}
+        >
+          <Text style={{ fontSize: 18, fontWeight: "600" }}>JD</Text>
+        </View>
+        <Text style={{ fontSize: 18, fontWeight: "semibold" }}>John Doe</Text>
       </View>
       <Text style={{ fontSize: 18, fontWeight: "semibold" }}>
-        -354 <Text style={{ fontSize: 12 }}>KES</Text>
+        -354 <Text style={{ fontSize: 12, fontWeight: "600" }}>KES</Text>
       </Text>
     </View>
   );
