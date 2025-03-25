@@ -57,6 +57,7 @@ const Home = () => {
               fontWeight: "semibold",
               color: COLORS["green-light"],
               fontSize: 24,
+              lineHeight: 30,
             }}
           >
             KES Account
@@ -68,7 +69,12 @@ const Home = () => {
           />
         </TouchableOpacity>
         <Text
-          style={{ color: COLORS.black, fontSize: 48, fontWeight: "semibold" }}
+          style={{
+            color: COLORS.black,
+            fontSize: 48,
+            fontWeight: "semibold",
+            lineHeight: 50,
+          }}
         >
           14 500<Text style={{ fontSize: 24 }}> KES</Text>
         </Text>
