@@ -11,7 +11,7 @@ const TransactionItem = () => {
         padding: 10,
       }}
     >
-      <View style={{ flexDirection: "row", alignItems: "flex-start" }}>
+      <View style={{ flexDirection: "row", alignItems: "flex-start", gap: 10 }}>
         <View
           style={{
             padding: 8,
@@ -21,8 +21,10 @@ const TransactionItem = () => {
         >
           <Text style={{ fontSize: 18, fontWeight: "600" }}>JD</Text>
         </View>
-        <Text style={{ fontSize: 18, fontWeight: "600" }}>John Doe</Text>
-        <Text style={{ fontSize: 18, fontWeight: "600" }}>John Doe</Text>
+        <View>
+          <Text style={{ fontSize: 18, fontWeight: "600" }}>John Doe</Text>
+          <Text style={{ fontSize: 14 }}>John Doe</Text>
+        </View>
       </View>
       <Text style={{ fontSize: 18, fontWeight: "semibold" }}>
         -354 <Text style={{ fontSize: 12, fontWeight: "600" }}>KES</Text>
