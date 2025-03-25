@@ -12,6 +12,8 @@ import {
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
 import { ActivityIndicator } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import MainStackNavigator from "./navigations/MainStackNavigator";
 export default function App() {
   let [fontsLoaded] = useFonts({
     Poppins_400Regular,
@@ -59,7 +61,9 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <Home />
+      <NavigationContainer>
+        <MainStackNavigator />
+      </NavigationContainer>
     </SafeAreaProvider>
   );
 }
