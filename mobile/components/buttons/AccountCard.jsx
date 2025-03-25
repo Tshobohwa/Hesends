@@ -9,7 +9,7 @@ const AccountCard = () => {
       <View>
         <Image source={uganda} style={{ width: 30, height: 30 }} />
       </View>
-      <View style={{ width: 160, alignItems: "flex-end" }}>
+      <View style={{ width: 180, alignItems: "flex-end" }}>
         <Text
           style={[styles.text, { color: COLORS["green"], fontWeight: "600" }]}
         >
@@ -31,13 +31,13 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     borderWidth: 1,
     borderColor: COLORS["green-light-50"],
-    width: 180,
+    width: 200,
     height: 120,
     justifyContent: "space-between",
     marginRight: 10,
   },
   text: {
-    fontSize: 20,
+    fontSize: 18,
     textAlign: "center",
   },
 });
