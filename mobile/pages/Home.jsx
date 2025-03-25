@@ -11,6 +11,7 @@ import COLORS from "../utils/colors";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import TransactionButton from "../components/buttons/TransactionButton";
 import TransactionItem from "../components/buttons/TransactionItem";
+import AccountCard from "../components/buttons/AccountCard";
 
 const Home = () => {
   return (
@@ -47,6 +48,13 @@ const Home = () => {
           <TransactionButton name="Send" />
           <TransactionButton name="Withdraw" />
         </View>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={{ width: "100%", marginTop: 20 }}
+        >
+          <AccountCard />
+        </ScrollView>
         <View
           style={{
             marginTop: 20,

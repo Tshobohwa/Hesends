@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
-import { COLORS } from "../../styles/colors";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
+import COLORS from "../../utils/colors";
 
 const AccountCard = () => {
   return (
-    <View>
+    <TouchableOpacity style={styles.container}>
       <Text>AccountCard</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
