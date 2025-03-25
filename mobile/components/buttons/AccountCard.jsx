@@ -1,11 +1,14 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import COLORS from "../../utils/colors";
+import uganda from "../../images/uganda.png";
 
 const AccountCard = () => {
   return (
     <TouchableOpacity style={styles.container}>
-      <View></View>
+      <View>
+        <Image source={uganda} style={{ width: 30, height: 30 }} />
+      </View>
       <View style={{ width: 160, alignItems: "flex-end" }}>
         <Text
           style={[styles.text, { color: COLORS["green"], fontWeight: "600" }]}
