@@ -116,6 +116,56 @@ const Home = () => {
         <TransactionItem />
         <TransactionItem />
       </ScrollView>
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "center",
+          position: "absolute",
+          bottom: 20,
+          width: "100%",
+        }}
+      >
+        <TouchableOpacity
+          style={{
+            height: 45,
+            backgroundColor: COLORS["green-light"],
+            justifyContent: "center",
+            alignItems: "center",
+            borderTopLeftRadius: 25,
+            borderBottomLeftRadius: 30,
+            width: 95,
+          }}
+        >
+          <Text style={{ fontWeight: "600" }}>Top up</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            height: 45,
+            backgroundColor: COLORS["green-light"],
+            justifyContent: "center",
+            alignItems: "center",
+            width: 95,
+            borderRightWidth: 2,
+            borderLeftWidth: 2,
+            borderColor: COLORS.white,
+          }}
+        >
+          <Text style={{ fontWeight: "600" }}>Send</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            height: 45,
+            backgroundColor: COLORS["green-light"],
+            justifyContent: "center",
+            alignItems: "center",
+            borderTopRightRadius: 25,
+            borderBottomRightRadius: 30,
+            width: 95,
+          }}
+        >
+          <Text style={{ fontWeight: "600" }}>Withdraw</Text>
+        </TouchableOpacity>
+      </View>
     </SafeAreaView>
   );
 };
