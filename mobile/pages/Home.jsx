@@ -5,6 +5,8 @@ const Home = () => {
   return (
     <ScrollView style={styles.container}>
       <Text>Home</Text>
+      <Text>KES Account</Text>
+      <Text style={{}}>14 500 KES</Text>
     </ScrollView>
   );
 };
