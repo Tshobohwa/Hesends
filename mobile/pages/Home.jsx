@@ -8,6 +8,7 @@ import {
 import React from "react";
 import COLORS from "../utils/colors";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import TransactionButton from "../components/buttons/TransactionButton";
 
 const Home = () => {
   return (
@@ -37,6 +38,11 @@ const Home = () => {
       >
         14 500<Text style={{ fontSize: 24 }}> KES</Text>
       </Text>
+      <View>
+        <TransactionButton name="Top up" />
+        <TransactionButton name="Send" />
+        <TransactionButton name="Withdraw" />
+      </View>
     </ScrollView>
   );
 };
