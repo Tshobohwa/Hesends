@@ -112,9 +112,7 @@ const Home = () => {
         <TransactionItem />
         <TransactionItem />
         <TransactionItem />
-        <TransactionItem />
-        <TransactionItem />
-        <TransactionItem />
+        <View style={{ height: 120 }}></View>
       </ScrollView>
       <View
         style={{
