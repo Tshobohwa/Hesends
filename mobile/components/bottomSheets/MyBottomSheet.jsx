@@ -4,7 +4,7 @@ import BottomSheet, { BottomSheetView } from "@gorhom/bottom-sheet";
 
 const MyBottomSheet = ({
   bottomSheetOpen,
-  setBottomSheetOpen,
+  setBottomSheetOpen = () => {},
   snapPointsArray = ["60%"],
   children,
 }) => {
