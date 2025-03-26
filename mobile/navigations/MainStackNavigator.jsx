@@ -7,7 +7,10 @@ const Stack = createNativeStackNavigator();
 
 const MainStackNavigator = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{ headerShown: false }}
+      initialRouteName="BottomTabs"
+    >
       <Stack.Screen name="BottomTabs" component={BottomTabsNavigator} />
     </Stack.Navigator>
   );

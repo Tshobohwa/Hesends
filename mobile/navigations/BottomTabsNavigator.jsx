@@ -9,20 +9,15 @@ const screenOptions = {
   tabBarHideOnKeyboard: true,
   headerShown: false,
   tabBarStyle: {
-    position: "absolute",
-    bottom: 10,
-    elevation: 0,
-    height: 70,
-    borderRadius: 10,
-    marginHorizontal: 8,
     borderTopWidth: 0,
+    height: 60,
   },
 };
 
 const BottomTabsNavigator = () => {
   return (
-    <Tab.Navigator initialRouteName="Home">
-      <Tab.Screen name="Home" component={Home} screenOptions={screenOptions} />
+    <Tab.Navigator initialRouteName="Home" screenOptions={screenOptions}>
+      <Tab.Screen name="Home" component={Home} />
     </Tab.Navigator>
   );
 };
