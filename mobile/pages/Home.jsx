@@ -16,6 +16,7 @@ import AccountCard from "../components/buttons/AccountCard";
 // import hesendsIcon from "../images/hesends.png";
 // import hederaBlack from "../images/hedera-black.png";
 import hederaGreen from "../images/hedera-green.png";
+import MyBottomSheet from "../components/bottomSheets/MyBottomSheet";
 
 const Home = () => {
   return (
@@ -112,7 +113,7 @@ const Home = () => {
         <TransactionItem />
         <TransactionItem />
         <TransactionItem />
-        <View style={{ height: 120 }}></View>
+        <MyBottomSheet />
       </ScrollView>
       <View
         style={{
