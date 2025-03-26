@@ -8,7 +8,7 @@ import {
   Image,
   ActivityIndicator,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import COLORS from "../utils/colors";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import TransactionItem from "../components/buttons/TransactionItem";
@@ -19,6 +19,8 @@ import hederaGreen from "../images/hedera-green.png";
 import MyBottomSheet from "../components/bottomSheets/MyBottomSheet";
 
 const Home = () => {
+  const [isSelectingAccount, setIsSelectingAccount] = useState(false);
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
       <ScrollView style={styles.container}>
@@ -47,9 +49,9 @@ const Home = () => {
             esends
           </Text>
         </View>
-        n
         <TouchableOpacity
           style={{ flexDirection: "row", alignItems: "center", gap: 10 }}
+          onPress={() => setIsSelectingAccount(!isSelectingAccount)}
         >
           <Text
             style={{
@@ -165,6 +167,10 @@ const Home = () => {
           <Text style={{ fontWeight: "600" }}>Withdraw</Text>
         </TouchableOpacity>
       </View>
+      <MyBottomSheet
+        bottomSheetOpen={isSelectingAccount}
+        setBottomSheetOpen={setIsSelectingAccount}
+      />
     </SafeAreaView>
   );
 };

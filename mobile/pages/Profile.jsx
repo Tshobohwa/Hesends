@@ -15,7 +15,10 @@ const Profile = () => {
         <TouchableOpacity onPress={() => setBottomSheetOpen(!bottomSheetOpen)}>
           <Text>Toggle bottom sheet</Text>
         </TouchableOpacity>
-        <MyBottomSheet bottomSheetOpen={bottomSheetOpen} />
+        <MyBottomSheet
+          bottomSheetOpen={bottomSheetOpen}
+          setBottomSheetOpen={setBottomSheetOpen}
+        />
       </View>
     </SafeAreaView>
   );

@@ -4,6 +4,7 @@ import BottomSheet, { BottomSheetView } from "@gorhom/bottom-sheet";
 
 const MyBottomSheet = ({
   bottomSheetOpen,
+  setBottomSheetOpen,
   snapPointsArray = ["60%"],
   children,
 }) => {
@@ -26,24 +27,24 @@ const MyBottomSheet = ({
   }, [bottomSheetOpen]);
 
   return (
-    <View style={styles.container}>
-      <BottomSheet
-        ref={bottomSheetRef}
-        index={-1} // Initially closed
-        snapPoints={snapPoints}
-        onChange={handleSheetChanges}
-        enablePanDownToClose={true}
-      >
-        <BottomSheetView style={styles.contentContainer}>
-          {/* <Text style={styles.text}>This is inside BottomSheetView!</Text>
+    // <View style={styles.container}>
+    <BottomSheet
+      ref={bottomSheetRef}
+      index={-1} // Initially closed
+      snapPoints={snapPoints}
+      onChange={handleSheetChanges}
+      enablePanDownToClose={true}
+      onClose={() => setBottomSheetOpen(false)}
+    >
+      <BottomSheetView style={styles.contentContainer}>
+        {/* <Text style={styles.text}>This is inside BottomSheetView!</Text>
           <Button
             title="Close"
             onPress={() => bottomSheetRef.current?.close()}
           /> */}
-          {children}
-        </BottomSheetView>
-      </BottomSheet>
-    </View>
+        {children}
+      </BottomSheetView>
+    </BottomSheet>
   );
 };
 
