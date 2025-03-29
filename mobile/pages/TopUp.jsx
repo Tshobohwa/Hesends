@@ -8,7 +8,14 @@ import accounts from "../mockingData/accounts";
 const TopUp = () => {
   return (
     <SafeAreaView style={{ flex: 1, padding: 10 }}>
-      <Text style={{ fontSize: 32, fontWeight: "600", color: COLORS["green"] }}>
+      <Text
+        style={{
+          fontSize: 32,
+          fontWeight: "600",
+          color: COLORS["green"],
+          marginBottom: 20,
+        }}
+      >
         Top up your Kenyan Shilling account
       </Text>
       <AmountInput account={accounts[0]} />
