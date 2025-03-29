@@ -5,7 +5,6 @@ import {
   ScrollView,
   TouchableOpacity,
   Image,
-  ActivityIndicator,
 } from "react-native";
 import React, { useState } from "react";
 import COLORS from "../utils/colors";
@@ -18,7 +17,7 @@ import SelectAccountButton from "../components/buttons/SelectAccountButton";
 import accounts from "../mockingData/accounts";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   const [isSelectingAccount, setIsSelectingAccount] = useState(false);
 
   return (
@@ -139,6 +138,7 @@ const Home = () => {
             borderBottomLeftRadius: 30,
             width: 95,
           }}
+          onPress={() => navigation.navigate("TopUp")}
         >
           <Text style={{ fontWeight: "600" }}>Top up</Text>
         </TouchableOpacity>
