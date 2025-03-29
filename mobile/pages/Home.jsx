@@ -4,7 +4,6 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  SafeAreaView,
   Image,
   ActivityIndicator,
 } from "react-native";
@@ -17,6 +16,7 @@ import hederaGreen from "../images/hedera-green.png";
 import MyBottomSheet from "../components/bottomSheets/MyBottomSheet";
 import SelectAccountButton from "../components/buttons/SelectAccountButton";
 import accounts from "../mockingData/accounts";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Home = () => {
   const [isSelectingAccount, setIsSelectingAccount] = useState(false);
@@ -204,6 +204,5 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     padding: 10,
-    paddingTop: 40,
   },
 });
