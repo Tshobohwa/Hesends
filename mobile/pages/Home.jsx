@@ -15,6 +15,7 @@ import TransactionItem from "../components/buttons/TransactionItem";
 import AccountCard from "../components/buttons/AccountCard";
 import hederaGreen from "../images/hedera-green.png";
 import MyBottomSheet from "../components/bottomSheets/MyBottomSheet";
+import SelectAccountButton from "../components/buttons/SelectAccountButton";
 
 const Home = () => {
   const [isSelectingAccount, setIsSelectingAccount] = useState(false);
@@ -168,6 +169,21 @@ const Home = () => {
       <MyBottomSheet
         bottomSheetOpen={isSelectingAccount}
         setBottomSheetOpen={setIsSelectingAccount}
+        children={
+          <View>
+            <Text
+              style={{
+                fontWeight: "600",
+                fontSize: 18,
+                textAlign: "center",
+                marginBottom: 10,
+              }}
+            >
+              Select Account
+            </Text>
+            <SelectAccountButton currency={"Rwandan Franc"} balance={"40000"} />
+          </View>
+        }
       />
     </SafeAreaView>
   );

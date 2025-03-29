@@ -1,6 +1,9 @@
 import React, { useRef, useMemo, useCallback, useEffect } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
-import BottomSheet, { BottomSheetView } from "@gorhom/bottom-sheet";
+import BottomSheet, {
+  BottomSheetView,
+  SCREEN_WIDTH,
+} from "@gorhom/bottom-sheet";
 
 const MyBottomSheet = ({
   bottomSheetOpen,
@@ -37,12 +40,7 @@ const MyBottomSheet = ({
       onClose={() => setBottomSheetOpen(false)}
     >
       <BottomSheetView style={styles.contentContainer}>
-        {/* <Text style={styles.text}>This is inside BottomSheetView!</Text>
-          <Button
-            title="Close"
-            onPress={() => bottomSheetRef.current?.close()}
-          /> */}
-        {children}
+        <View style={{ width: SCREEN_WIDTH }}>{children}</View>
       </BottomSheetView>
     </BottomSheet>
   );
@@ -58,11 +56,6 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-  },
-  contentContainer: {
-    flex: 1,
-    alignItems: "center",
-    padding: 20,
   },
   text: {
     fontSize: 16,
