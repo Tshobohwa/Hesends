@@ -4,6 +4,7 @@ import React from "react";
 import BottomTabsNavigator from "./BottomTabsNavigator";
 import TopUp from "../pages/TopUp";
 import Send from "../pages/Send";
+import Withdraw from "../pages/Withdraw";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,11 @@ const MainStackNavigator = () => {
       <Stack.Screen
         name="Send"
         component={Send}
+        options={{ animation: "slide_from_bottom" }}
+      />
+      <Stack.Screen
+        name="Withdraw"
+        component={Withdraw}
         options={{ animation: "slide_from_bottom" }}
       />
     </Stack.Navigator>

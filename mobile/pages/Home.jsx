@@ -167,6 +167,7 @@ const Home = ({ navigation }) => {
             borderBottomRightRadius: 30,
             width: 95,
           }}
+          onPress={() => navigation.navigate("Withdraw")}
         >
           <Text style={{ fontWeight: "600" }}>Withdraw</Text>
         </TouchableOpacity>
