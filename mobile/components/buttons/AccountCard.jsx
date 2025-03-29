@@ -10,10 +10,7 @@ const AccountCard = ({ currency, balance, icon, symbol }) => {
       </View>
       <View style={{ width: 180, alignItems: "flex-end" }}>
         <Text
-          style={[
-            styles.text,
-            { color: COLORS["green"], fontWeight: "600", fontWeight: "600" },
-          ]}
+          style={[styles.text, { color: COLORS["green"], fontWeight: "500" }]}
         >
           {currency}
         </Text>

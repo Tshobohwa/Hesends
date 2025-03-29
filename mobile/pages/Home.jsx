@@ -94,6 +94,7 @@ const Home = () => {
               currency={account.name}
               balance={account.balance}
               symbol={account.symbol}
+              icon={account.icon}
             />
           ))}
         </ScrollView>
