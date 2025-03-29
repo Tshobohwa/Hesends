@@ -30,8 +30,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     borderWidth: 1,
     borderColor: COLORS["green-light-50"],
-    width: 200,
-    height: 120,
     justifyContent: "space-between",
     marginRight: 10,
   },
