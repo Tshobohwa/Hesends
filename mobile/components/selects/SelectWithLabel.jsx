@@ -20,7 +20,6 @@ const SelectWithLabel = ({ label, options }) => {
         <Text
           style={{
             fontSize: 28,
-            backgroundColor: "red",
             lineHeight: 32,
           }}
         >
