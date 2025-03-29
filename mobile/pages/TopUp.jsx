@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import COLORS from "../utils/colors";
 import AmountInput from "../components/textInputs/AmountInput";
 import accounts from "../mockingData/accounts";
+import SelectWithLabel from "../components/selects/SelectWithLabel";
 
 const TopUp = () => {
   return (
@@ -19,6 +20,8 @@ const TopUp = () => {
         Top up your Kenyan Shilling account
       </Text>
       <AmountInput account={accounts[0]} />
+      <View style={{ height: 120 }} />
+      <SelectWithLabel label={"Top up from"} />
     </SafeAreaView>
   );
 };
