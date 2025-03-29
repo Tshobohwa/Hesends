@@ -153,6 +153,7 @@ const Home = ({ navigation }) => {
             borderLeftWidth: 2,
             borderColor: COLORS.white,
           }}
+          onPress={() => navigation.navigate("Send")}
         >
           <Text style={{ fontWeight: "600" }}>Send</Text>
         </TouchableOpacity>
