@@ -5,6 +5,8 @@ import Profile from "../pages/Profile";
 import BottomTabIcon from "../components/icons/BottomTabIcon";
 import Feather from "@expo/vector-icons/Feather";
 import COLORS from "../utils/colors";
+import AntDesign from "@expo/vector-icons/AntDesign";
+import Transactions from "../pages/Transactions";
 
 const Tab = createBottomTabNavigator();
 
@@ -32,6 +34,25 @@ const BottomTabsNavigator = () => {
               icon={
                 <Feather
                   name="home"
+                  size={24}
+                  color={focused ? COLORS["green-light"] : COLORS["black"]}
+                />
+              }
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Transactions"
+        component={Transactions}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <BottomTabIcon
+              name={"Transactions"}
+              focused={focused}
+              icon={
+                <AntDesign
+                  name="swap"
                   size={24}
                   color={focused ? COLORS["green-light"] : COLORS["black"]}
                 />
