@@ -4,6 +4,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import CircularButtonWithIcon from "../components/bottomSheets/CircularButtonWithIcon";
 import COLORS from "../utils/colors";
+import AmountInput from "../components/textInputs/AmountInput";
+import accounts from "../mockingData/accounts";
 
 const Send = ({ navigation }) => {
   return (
@@ -13,6 +15,7 @@ const Send = ({ navigation }) => {
         onPress={() => navigation.pop()}
       />
       <Text style={styles.header}>Send</Text>
+      <AmountInput account={accounts[0]} label={"You send"} />
     </SafeAreaView>
   );
 };

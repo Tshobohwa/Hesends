@@ -3,6 +3,8 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import CircularButtonWithIcon from "../components/bottomSheets/CircularButtonWithIcon";
 import AntDesign from "@expo/vector-icons/AntDesign";
+import AmountInput from "../components/textInputs/AmountInput";
+import accounts from "../mockingData/accounts";
 
 const Withdraw = ({ navigation }) => {
   return (
@@ -12,6 +14,7 @@ const Withdraw = ({ navigation }) => {
         icon={<AntDesign name="close" size={24} color="black" />}
       />
       <Text style={styles.header}>Withdraw money to your mobile wallet</Text>
+      <AmountInput account={accounts[0]} />
     </SafeAreaView>
   );
 };

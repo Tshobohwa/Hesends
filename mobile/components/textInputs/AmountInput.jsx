@@ -9,9 +9,10 @@ import {
 import React from "react";
 import screenDimensions from "../../utils/screenDimensions";
 
-const AmountInput = ({ account }) => {
+const AmountInput = ({ account, label }) => {
   return (
     <View>
+      <Text style={{ fontWeight: "500" }}>{label}</Text>
       <View
         style={{
           height: 60,
