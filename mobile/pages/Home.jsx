@@ -16,6 +16,7 @@ import AccountCard from "../components/buttons/AccountCard";
 import hederaGreen from "../images/hedera-green.png";
 import MyBottomSheet from "../components/bottomSheets/MyBottomSheet";
 import SelectAccountButton from "../components/buttons/SelectAccountButton";
+import accounts from "../mockingData/accounts";
 
 const Home = () => {
   const [isSelectingAccount, setIsSelectingAccount] = useState(false);
@@ -181,7 +182,13 @@ const Home = () => {
             >
               Select Account
             </Text>
-            <SelectAccountButton currency={"Rwandan Franc"} balance={"40000"} />
+            {accounts.map((account) => (
+              <SelectAccountButton
+                currency={account.name}
+                balance={account.balance + " " + account.symbol}
+                icon={account.icon}
+              />
+            ))}
           </View>
         }
       />
