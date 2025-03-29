@@ -3,19 +3,22 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import CircularButtonWithIcon from "../components/bottomSheets/CircularButtonWithIcon";
+import COLORS from "../utils/colors";
 
 const Send = ({ navigation }) => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, padding: 10 }}>
       <CircularButtonWithIcon
         icon={<AntDesign name="close" size={24} color="black" />}
         onPress={() => navigation.pop()}
       />
-      <Text>Send</Text>
+      <Text style={styles.header}>Send</Text>
     </SafeAreaView>
   );
 };
 
 export default Send;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  header: { fontSize: 24, fontWeight: "500", color: COLORS["green"] },
+});
