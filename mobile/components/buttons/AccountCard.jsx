@@ -1,22 +1,24 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import COLORS from "../../utils/colors";
-import uganda from "../../images/uganda.png";
 
-const AccountCard = () => {
+const AccountCard = ({ currency, balance, icon, symbol }) => {
   return (
     <TouchableOpacity style={styles.container}>
       <View>
-        <Image source={uganda} style={{ width: 30, height: 30 }} />
+        <Image source={icon} style={{ width: 30, height: 30 }} />
       </View>
       <View style={{ width: 180, alignItems: "flex-end" }}>
         <Text
-          style={[styles.text, { color: COLORS["green"], fontWeight: "600" }]}
+          style={[
+            styles.text,
+            { color: COLORS["green"], fontWeight: "600", fontWeight: "600" },
+          ]}
         >
-          Ugandan Shilling
+          {currency}
         </Text>
         <Text style={[styles.text, { color: COLORS["black-light"] }]}>
-          10 000 UGX
+          {balance + " " + symbol}
         </Text>
       </View>
     </TouchableOpacity>

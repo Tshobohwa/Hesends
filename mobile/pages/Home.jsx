@@ -89,11 +89,13 @@ const Home = () => {
           showsHorizontalScrollIndicator={false}
           style={{ width: "100%", marginTop: 20, gap: 10 }}
         >
-          <AccountCard />
-          <AccountCard />
-          <AccountCard />
-          <AccountCard />
-          <AccountCard />
+          {accounts.map((account) => (
+            <AccountCard
+              currency={account.name}
+              balance={account.balance}
+              symbol={account.symbol}
+            />
+          ))}
         </ScrollView>
         <View
           style={{
