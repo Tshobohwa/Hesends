@@ -1,4 +1,5 @@
 import {
+  Image,
   StyleSheet,
   Text,
   TextInput,
@@ -8,7 +9,7 @@ import {
 import React from "react";
 import screenDimensions from "../../utils/screenDimensions";
 
-const AmountInput = () => {
+const AmountInput = ({ account }) => {
   return (
     <View>
       <View
@@ -25,19 +26,25 @@ const AmountInput = () => {
             height: 60,
             fontSize: 28,
             width: screenDimensions.screenWidth - 130,
+            paddingHorizontal: 10,
           }}
           inputMode="decimal"
+          placeholder={`max ${account.balance}`}
         />
         <TouchableOpacity
           style={{
-            height: 60,
+            height: 59,
             width: 110,
-            backgroundColor: "yellow",
             flexDirection: "row",
             alignItems: "center",
+            padding: 5,
+            gap: 8,
+            borderLeftWidth: 1,
+            justifyContent: "center",
           }}
         >
-          <Text style={{ fontSize: 28 }}>KES</Text>
+          <Image source={account.icon} style={{ height: 24, width: 24 }} />
+          <Text style={{ fontSize: 24, fontWeight: "500" }}>KES</Text>
         </TouchableOpacity>
       </View>
     </View>

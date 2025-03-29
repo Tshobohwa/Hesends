@@ -3,6 +3,7 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import COLORS from "../utils/colors";
 import AmountInput from "../components/textInputs/AmountInput";
+import accounts from "../mockingData/accounts";
 
 const TopUp = () => {
   return (
@@ -10,7 +11,7 @@ const TopUp = () => {
       <Text style={{ fontSize: 32, fontWeight: "600", color: COLORS["green"] }}>
         Top up your Kenyan Shilling account
       </Text>
-      <AmountInput />
+      <AmountInput account={accounts[0]} />
     </SafeAreaView>
   );
 };
