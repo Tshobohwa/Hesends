@@ -13,8 +13,6 @@ import COLORS from "../utils/colors";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import TransactionItem from "../components/buttons/TransactionItem";
 import AccountCard from "../components/buttons/AccountCard";
-// import hesendsIcon from "../images/hesends.png";
-// import hederaBlack from "../images/hedera-black.png";
 import hederaGreen from "../images/hedera-green.png";
 import MyBottomSheet from "../components/bottomSheets/MyBottomSheet";
 
