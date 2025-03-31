@@ -23,12 +23,7 @@ const AmountInput = ({ account, label }) => {
         }}
       >
         <TextInput
-          style={{
-            height: 60,
-            fontSize: 28,
-            width: screenDimensions.screenWidth - 130,
-            paddingHorizontal: 10,
-          }}
+          style={styles.TextInput}
           inputMode="decimal"
           placeholder={`max ${account.balance}`}
         />
@@ -54,4 +49,12 @@ const AmountInput = ({ account, label }) => {
 
 export default AmountInput;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  TextInput: {
+    // fontFamily: "Poppins_400Regular",
+    height: 60,
+    fontSize: 28,
+    width: screenDimensions.screenWidth - 130,
+    paddingHorizontal: 10,
+  },
+});
