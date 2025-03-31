@@ -5,6 +5,8 @@ import BottomTabsNavigator from "./BottomTabsNavigator";
 import TopUp from "../pages/TopUp";
 import Send from "../pages/Send";
 import Withdraw from "../pages/Withdraw";
+import Login from "../pages/Login";
+import SignUp from "../pages/SignUp";
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +30,16 @@ const MainStackNavigator = () => {
       <Stack.Screen
         name="Withdraw"
         component={Withdraw}
+        options={{ animation: "slide_from_bottom" }}
+      />
+      <Stack.Screen
+        name="Login"
+        component={Login}
+        options={{ animation: "slide_from_bottom" }}
+      />
+      <Stack.Screen
+        name="SignUp"
+        component={SignUp}
         options={{ animation: "slide_from_bottom" }}
       />
     </Stack.Navigator>
