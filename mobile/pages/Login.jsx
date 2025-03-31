@@ -29,7 +29,17 @@ const Login = () => {
           esends
         </Text>
       </View>
-      <Text>Login</Text>
+      <Text
+        style={{
+          fontSize: 18,
+          marginVertical: 30,
+          textAlign: "center",
+          color: COLORS["black-light"],
+        }}
+      >
+        Send money across East Africa instantly and securely with Hesend.
+      </Text>
+      <Text style={{ fontSize: 24, fontWeight: "600" }}>Login</Text>
     </SafeAreaView>
   );
 };
