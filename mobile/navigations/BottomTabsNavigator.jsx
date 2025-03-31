@@ -7,6 +7,7 @@ import Feather from "@expo/vector-icons/Feather";
 import COLORS from "../utils/colors";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Transactions from "../pages/Transactions";
+import Recipients from "../pages/Recipients";
 
 const Tab = createBottomTabNavigator();
 
@@ -53,6 +54,25 @@ const BottomTabsNavigator = () => {
               icon={
                 <AntDesign
                   name="swap"
+                  size={24}
+                  color={focused ? COLORS["green-light"] : COLORS["black"]}
+                />
+              }
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Recipients"
+        component={Recipients}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <BottomTabIcon
+              name={"Recipients"}
+              focused={focused}
+              icon={
+                <Feather
+                  name="users"
                   size={24}
                   color={focused ? COLORS["green-light"] : COLORS["black"]}
                 />
