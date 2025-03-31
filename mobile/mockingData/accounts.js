@@ -51,4 +51,6 @@ const accounts = [
   },
 ];
 
+export { TZS, UGX, CDF, BIF, SSP, RWF, KES };
+
 export default accounts;
