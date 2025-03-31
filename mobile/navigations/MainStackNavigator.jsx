@@ -32,11 +32,7 @@ const MainStackNavigator = () => {
         component={Withdraw}
         options={{ animation: "slide_from_bottom" }}
       />
-      <Stack.Screen
-        name="Login"
-        component={Login}
-        options={{ animation: "slide_from_bottom" }}
-      />
+      <Stack.Screen name="Login" component={Login} />
       <Stack.Screen
         name="SignUp"
         component={SignUp}
