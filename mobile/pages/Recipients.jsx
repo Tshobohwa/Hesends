@@ -55,6 +55,7 @@ const Recipients = () => {
             backgroundColor: "#ffffff",
             marginVertical: 20,
             marginHorizontal: 10,
+            borderRadius: 20,
           }}
         >
           <RecipientButton />
