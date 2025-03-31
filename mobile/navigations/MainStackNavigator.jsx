@@ -14,7 +14,7 @@ const MainStackNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{ headerShown: false }}
-      initialRouteName="BottomTabs"
+      initialRouteName="Login"
     >
       <Stack.Screen name="BottomTabs" component={BottomTabsNavigator} />
       <Stack.Screen
