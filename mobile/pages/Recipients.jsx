@@ -1,4 +1,5 @@
 import {
+  Image,
   ScrollView,
   StyleSheet,
   Text,
@@ -9,6 +10,7 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import COLORS from "../utils/colors";
 import SearchInput from "../components/textInputs/SearchInput";
+import { KES } from "../mockingData/accounts";
 
 const RecipientButton = () => {
   return (
@@ -32,12 +34,19 @@ const RecipientButton = () => {
           <Text style={{ fontWeight: "600", lineHeight: 20 }}>JD</Text>
         </View>
         <View>
-          <Text style={{ fontSize: 16, fontWeight: "500", lineHeight: 24 }}>
+          <Text
+            style={{
+              fontSize: 16,
+              fontWeight: "600",
+              lineHeight: 24,
+            }}
+          >
             John Doe
           </Text>
           <Text style={{ color: COLORS["black-light"] }}>@johndoe</Text>
         </View>
       </View>
+      <Image style={{ height: 25, width: 25 }} source={KES} />
     </TouchableOpacity>
   );
 };
