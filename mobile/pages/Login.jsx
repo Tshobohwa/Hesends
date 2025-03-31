@@ -3,6 +3,7 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import HederaIcon from "../images/hedera-green.png";
 import COLORS from "../utils/colors";
+import TextInputWithLabel from "../components/textInputs/TextInputWithLabel";
 
 const Login = () => {
   return (
@@ -40,6 +41,10 @@ const Login = () => {
         Send money across East Africa instantly and securely with Hesend.
       </Text>
       <Text style={{ fontSize: 24, fontWeight: "600" }}>Login</Text>
+      <TextInputWithLabel
+        label={"email"}
+        placeholder="enter your email address"
+      />
     </SafeAreaView>
   );
 };
