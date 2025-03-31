@@ -18,14 +18,23 @@ const RecipientButton = () => {
         alignItems: "center",
         gap: 10,
         justifyContent: "space-between",
+        padding: 10,
       }}
     >
       <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-        <View>
-          <Text>JD</Text>
+        <View
+          style={{
+            padding: 8,
+            backgroundColor: COLORS["white-light"],
+            borderRadius: 8,
+          }}
+        >
+          <Text style={{ fontWeight: "600", lineHeight: 20 }}>JD</Text>
         </View>
         <View>
-          <Text style={{ fontSize: 16, fontWeight: "500" }}>John Doe</Text>
+          <Text style={{ fontSize: 16, fontWeight: "500", lineHeight: 24 }}>
+            John Doe
+          </Text>
           <Text style={{ color: COLORS["black-light"] }}>@johndoe</Text>
         </View>
       </View>
