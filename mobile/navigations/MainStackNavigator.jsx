@@ -40,7 +40,7 @@ const MainStackNavigator = () => {
       <Stack.Screen
         name="SignUp"
         component={SignUp}
-        options={{ animation: "slide_from_bottom" }}
+        options={{ animation: "slide_from_right" }}
       />
     </Stack.Navigator>
   );
