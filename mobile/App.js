@@ -2,57 +2,53 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import Home from "./pages/Home";
-import * as Font from "expo-font";
-import {
-  useFonts,
-  Poppins_400Regular,
-  Poppins_500Medium,
-  Poppins_600SemiBold,
-  Poppins_700Bold,
-} from "@expo-google-fonts/poppins";
-import { ActivityIndicator } from "react-native";
+import { StyleSheet, Text, View, ActivityIndicator } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import MainStackNavigator from "./navigations/MainStackNavigator";
+
+import {
+  useFonts,
+  OpenSans_300Light,
+  OpenSans_400Regular,
+  OpenSans_600SemiBold,
+  OpenSans_700Bold,
+  OpenSans_800ExtraBold,
+} from "@expo-google-fonts/open-sans";
+
 export default function App() {
   let [fontsLoaded] = useFonts({
-    Poppins_400Regular,
-    Poppins_500Medium,
-    Poppins_600SemiBold,
-    Poppins_700Bold,
+    OpenSans_300Light,
+    OpenSans_400Regular,
+    OpenSans_600SemiBold,
+    OpenSans_700Bold,
+    OpenSans_800ExtraBold,
   });
 
   if (!fontsLoaded) {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <ActivityIndicator size="large" color="#000" />;
+        <ActivityIndicator size="large" color="#000" />
       </View>
     );
   }
 
-  // Set defaultProps for Text to map fontWeight to correct Poppins font
+  // Override Text component to apply correct Open Sans font weight dynamically
   const originalRender = Text.render;
   Text.render = function (...args) {
     const origin = originalRender.apply(this, args);
     const { style } = origin.props;
 
-    // Determine font family based on fontWeight
-    let fontFamily = "Poppins_400Regular"; // Default
+    let fontFamily = "OpenSans_400Regular"; // Default font
 
     if (style?.fontWeight) {
       const fontWeightMap = {
-        100: "Poppins_100Thin",
-        200: "Poppins_200ExtraLight",
-        300: "Poppins_300Light",
-        400: "Poppins_400Regular",
-        500: "Poppins_500Medium",
-        600: "Poppins_600SemiBold",
-        700: "Poppins_700Bold",
-        800: "Poppins_800ExtraBold",
-        900: "Poppins_900Black",
+        300: "OpenSans_300Light",
+        400: "OpenSans_400Regular",
+        600: "OpenSans_600SemiBold",
+        700: "OpenSans_700Bold",
+        800: "OpenSans_800ExtraBold",
       };
-      fontFamily = fontWeightMap[style.fontWeight] || "Poppins_400Regular";
+      fontFamily = fontWeightMap[style.fontWeight] || "OpenSans_400Regular";
     }
 
     return React.cloneElement(origin, {
